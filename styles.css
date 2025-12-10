@@ -371,6 +371,61 @@ footer p {
     opacity: 0.8;
 }
 
+/* Project Detail Pages */
+.page-content {
+    margin-top: 80px;
+}
+
+.project-detail {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.project-detail h2 {
+    font-size: 1.75rem;
+    color: var(--text-primary);
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.project-detail .project-overview p,
+.project-detail .project-challenges p {
+    font-size: 1.125rem;
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.feature-list {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.feature-list li {
+    padding: 0.75rem 0;
+    padding-left: 1.5rem;
+    color: var(--text-secondary);
+    position: relative;
+    line-height: 1.6;
+}
+
+.feature-list li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+.project-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .nav-links {

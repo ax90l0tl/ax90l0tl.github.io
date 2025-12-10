@@ -1,0 +1,28 @@
+# Jekyll Configuration for GitHub Pages
+title: ax90l0tl Portfolio
+description: Engineering Portfolio - Showcasing my projects, skills, and experience
+author: ax90l0tl
+url: "https://ax90l0tl.github.io"
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+theme: null
+
+# Exclude files from Jekyll processing
+exclude:
+  - README.md
+  - CUSTOMIZATION_GUIDE.md
+  - base-template.html
+
+# Include all HTML files in projects folder
+include:
+  - projects
+
+# Prevent Jekyll from processing these directories
+# (they contain static HTML that should be served as-is)
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: none
