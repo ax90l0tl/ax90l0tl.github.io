@@ -58,7 +58,9 @@ Your portfolio is now live! To view it, visit: `https://ax90l0tl.github.io`
 
 ### 3. Add More Projects
 
-To add a new project, copy this template in the projects section:
+#### Adding a Project Card on Homepage
+
+To add a new project card on the homepage, copy this template in the projects section of `index.html`:
 
 ```html
 <div class="project-card">
@@ -69,8 +71,102 @@ To add a new project, copy this template in the projects section:
         <span class="tag">Technology 2</span>
         <span class="tag">Technology 3</span>
     </div>
-    <a href="https://github.com/yourusername/project" class="project-link">View Project →</a>
+    <a href="projects/your-project.html" class="project-link">View Project →</a>
 </div>
+```
+
+#### Creating a Dedicated Project Page
+
+Each project can have its own detailed page. To create one:
+
+1. **Use the base template** (`base-template.html`) as a starting point
+2. **Or copy an existing project page** from the `projects/` folder (e.g., `project1.html`)
+3. **Update the content**:
+   - Change the page title and meta description
+   - Update the project name, overview, technologies, features, and challenges
+   - Update the links to your GitHub repo and live demo
+4. **Save it** in the `projects/` folder with a descriptive filename (e.g., `projects/my-awesome-app.html`)
+5. **Link to it** from the homepage by updating the project card's link
+
+**Example structure for a project page:**
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your project description">
+    <title>Your Project Name | ax90l0tl</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <h1 class="logo"><a href="../index.html" style="text-decoration: none; color: inherit;">ax90l0tl</a></h1>
+                <ul class="nav-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html#about">About</a></li>
+                    <li><a href="../index.html#skills">Skills</a></li>
+                    <li><a href="../index.html#projects">Projects</a></li>
+                    <li><a href="../index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="page-content">
+            <section class="section">
+                <div class="container">
+                    <h1 class="section-title">Your Project Name</h1>
+                    
+                    <div class="project-detail">
+                        <div class="project-overview">
+                            <h2>Overview</h2>
+                            <p>Detailed description of your project...</p>
+                        </div>
+
+                        <div class="project-technologies">
+                            <h2>Technologies Used</h2>
+                            <div class="project-tags">
+                                <span class="tag">Tech 1</span>
+                                <span class="tag">Tech 2</span>
+                            </div>
+                        </div>
+
+                        <div class="project-features">
+                            <h2>Key Features</h2>
+                            <ul class="feature-list">
+                                <li>Feature 1</li>
+                                <li>Feature 2</li>
+                            </ul>
+                        </div>
+
+                        <div class="project-links">
+                            <h2>Links</h2>
+                            <div class="project-buttons">
+                                <a href="YOUR_GITHUB_URL" class="btn btn-primary" target="_blank">View on GitHub</a>
+                                <a href="YOUR_DEMO_URL" class="btn btn-secondary">Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 ax90l0tl. Built with passion for engineering excellence.</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>
 ```
 
 ### 4. Customize Colors
